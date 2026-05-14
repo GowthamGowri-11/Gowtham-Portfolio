@@ -1,0 +1,132 @@
+.experience {
+  background: var(--bg-secondary);
+}
+
+.experience-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  gap: 30px;
+}
+
+.experience-card {
+  background: var(--bg-primary);
+  border-radius: 12px;
+  border: 2px solid var(--border);
+  padding: 35px;
+  transition: all 0.3s;
+  position: relative;
+  overflow: hidden;
+}
+
+.experience-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 5px;
+  height: 100%;
+  background: var(--accent);
+  transform: scaleY(0);
+  transition: transform 0.3s ease;
+}
+
+.experience-card:hover::before {
+  transform: scaleY(1);
+}
+
+.experience-card:hover {
+  box-shadow: 0 12px 35px var(--shadow-hover);
+  transform: translateY(-5px);
+  border-color: var(--accent);
+}
+
+.experience-header {
+  margin-bottom: 25px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid var(--border);
+}
+
+.experience-title-section {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 12px;
+  flex-wrap: wrap;
+}
+
+.experience-card h3 {
+  font-size: 1.4rem;
+  color: var(--text-primary);
+  font-weight: 700;
+  margin: 0;
+}
+
+.experience-type {
+  padding: 6px 14px;
+  background: var(--accent);
+  color: white;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.experience-duration {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.experience-responsibilities {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.experience-responsibilities li {
+  color: var(--text-secondary);
+  margin-bottom: 14px;
+  padding-left: 25px;
+  position: relative;
+  line-height: 1.7;
+  font-size: 0.95rem;
+}
+
+.experience-responsibilities li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 10px;
+  width: 8px;
+  height: 8px;
+  background: var(--accent);
+  border-radius: 50%;
+}
+
+.experience-responsibilities li:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 968px) {
+  .experience-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 576px) {
+  .experience-card {
+    padding: 25px 20px;
+  }
+
+  .experience-card h3 {
+    font-size: 1.2rem;
+  }
+
+  .experience-title-section {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+}

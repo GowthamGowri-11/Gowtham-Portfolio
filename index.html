@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gowtham M – AI & Data Science Developer | Portfolio</title>
+    <meta name="description" content="Portfolio of Gowtham M – AI & Data Science Engineer, Full Stack Developer, and Competitive Programmer based in Coimbatore, India.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- EmailJS SDK -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+<body>
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-follower" id="cursor-follower"></div>
+
+    <!-- Loader -->
+    <div class="page-loader" id="page-loader">
+        <div class="loader-inner">
+            <span class="loader-logo">&lt;GM/&gt;</span>
+            <div class="loader-bar-wrap"><div class="loader-bar-fill"></div></div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-text">&lt;Gowtham/&gt;</span>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#home"          class="nav-link">Home</a></li>
+                <li><a href="#about"         class="nav-link">About</a></li>
+                <li><a href="#skills"        class="nav-link">Skills</a></li>
+                <li><a href="#experience"    class="nav-link">Experience</a></li>
+                <li><a href="#projects"      class="nav-link">Projects</a></li>
+                <li><a href="#accomplishments" class="nav-link">Awards</a></li>
+                <li><a href="#contact"       class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="particles" id="particles"></div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <div class="hero-tag">Welcome to my portfolio ✦</div>
+                <h1>Hi, I'm <span class="name-highlight glitch" data-text="Gowtham M">Gowtham M</span></h1>
+                <div class="typing-container">
+                    <span class="typing-text" id="typing-text"></span><span class="cursor-blink">|</span>
+                </div>
+                <p class="hero-description">Analytical B.Tech graduate in AI &amp; Data Science · Full Stack Developer · Competitive Programmer</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View Projects</a>
+                    <a href="public/Gowtham-Resume.pdf" download="Gowtham_Resume.pdf" class="btn btn-secondary"><i class="fas fa-download"></i> Resume</a>
+                    <a href="#contact" class="btn btn-outline">Get In Touch</a>
+                </div>
+                <div class="social-links">
+                    <a href="https://github.com/GowthamGowri-11"              target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/gowtham-m-0a83353771" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="mailto:kit28.24bad049@gmail.com"                 aria-label="Email"><i class="fas fa-envelope"></i></a>
+                    <a href="tel:+918154505751"                               aria-label="Phone"><i class="fas fa-phone"></i></a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="hero-image-ring"></div>
+                <div class="hero-image-ring ring2"></div>
+                <img src="public/profile.png" alt="Gowtham M – AI & Data Science Developer" class="profile-img" onerror="this.style.display='none';document.getElementById('profile-fallback').style.display='flex'">
+                <div class="profile-fallback" id="profile-fallback"><i class="fas fa-user"></i></div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse"><div class="mouse-wheel"></div></div>
+            <span>Scroll Down</span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about reveal">
+        <div class="container">
+            <h2 class="section-title">About <span>Me</span></h2>
+            <div class="about-content">
+                <div class="about-image-wrap">
+                    <div class="about-img-border"></div>
+                    <img src="public/profile.png" alt="Gowtham M" class="about-profile-img" onerror="this.style.display='none';document.getElementById('about-fallback').style.display='flex'">
+                    <div class="profile-icon-fallback" id="about-fallback"><i class="fas fa-user"></i></div>
+                </div>
+                <div class="about-text">
+                    <h3>AI &amp; Data Science Graduate</h3>
+                    <p>Analytical B.Tech student in AI and Data Science with strong foundations in data structures, algorithms, C, C++, and Python. Skilled in web development, scripting, and competitive programming.</p>
+                    <p>Passionate about machine learning, data analysis, and building impactful full-stack applications that solve real-world problems.</p>
+                    <div class="about-stats">
+                        <div class="stat-item"><h4>1000+</h4><p>Problems Solved</p></div>
+                        <div class="stat-item"><h4>80+</h4><p>Contests Participated</p></div>
+                        <div class="stat-item"><h4>8.92</h4><p>CGPA</p></div>
+                        <div class="stat-item"><h4>10+</h4><p>Projects Completed</p></div>
+                    </div>
+                    <div class="education">
+                        <h4><i class="fas fa-graduation-cap"></i> Education</h4>
+                        <p><strong>B.Tech – Artificial Intelligence and Data Science</strong></p>
+                        <p>KIT - Kalaignar Karunanidhi Institute of Technology, Coimbatore</p>
+                        <p>CGPA: 8.92 &nbsp;·&nbsp; Expected Graduation: January 2028</p>
+                    </div>
+                    <a href="public/Gowtham-Resume.pdf" download="Gowtham_Resume.pdf" class="btn btn-primary" style="margin-top:1.5rem;display:inline-flex;gap:.5rem;align-items:center"><i class="fas fa-download"></i> Download Resume</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills reveal">
+        <div class="container">
+            <h2 class="section-title">Technical <span>Skills</span></h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3><i class="fas fa-code"></i> Programming</h3>
+                    <div class="skill-items">
+                        <div class="skill-item"><span>Python</span><div class="skill-bar"><div class="skill-progress" data-progress="90"></div></div></div>
+                        <div class="skill-item"><span>C++</span><div class="skill-bar"><div class="skill-progress" data-progress="88"></div></div></div>
+                        <div class="skill-item"><span>Java</span><div class="skill-bar"><div class="skill-progress" data-progress="85"></div></div></div>
+                        <div class="skill-item"><span>C</span><div class="skill-bar"><div class="skill-progress" data-progress="85"></div></div></div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-laptop-code"></i> Web Development</h3>
+                    <div class="skill-items">
+                        <div class="skill-item"><span>HTML / CSS</span><div class="skill-bar"><div class="skill-progress" data-progress="92"></div></div></div>
+                        <div class="skill-item"><span>JavaScript</span><div class="skill-bar"><div class="skill-progress" data-progress="88"></div></div></div>
+                        <div class="skill-item"><span>React.js</span><div class="skill-bar"><div class="skill-progress" data-progress="85"></div></div></div>
+                        <div class="skill-item"><span>Node.js / Express</span><div class="skill-bar"><div class="skill-progress" data-progress="83"></div></div></div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-brain"></i> AI / ML</h3>
+                    <div class="skill-items">
+                        <div class="skill-item"><span>Machine Learning</span><div class="skill-bar"><div class="skill-progress" data-progress="85"></div></div></div>
+                        <div class="skill-item"><span>Data Analysis</span><div class="skill-bar"><div class="skill-progress" data-progress="88"></div></div></div>
+                        <div class="skill-item"><span>Scikit-learn</span><div class="skill-bar"><div class="skill-progress" data-progress="82"></div></div></div>
+                        <div class="skill-item"><span>Pandas / NumPy</span><div class="skill-bar"><div class="skill-progress" data-progress="87"></div></div></div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-tools"></i> Tools &amp; Others</h3>
+                    <div class="skill-items">
+                        <div class="skill-item"><span>MySQL / MongoDB</span><div class="skill-bar"><div class="skill-progress" data-progress="86"></div></div></div>
+                        <div class="skill-item"><span>Git / GitHub</span><div class="skill-bar"><div class="skill-progress" data-progress="85"></div></div></div>
+                        <div class="skill-item"><span>n8n Automation</span><div class="skill-bar"><div class="skill-progress" data-progress="80"></div></div></div>
+                        <div class="skill-item"><span>UI/UX Design</span><div class="skill-bar"><div class="skill-progress" data-progress="82"></div></div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience reveal">
+        <div class="container">
+            <h2 class="section-title">Professional <span>Experience</span></h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Freelance Software Developer</h3>
+                        <span class="timeline-date"><i class="fas fa-calendar-alt"></i> 2024 – Present &nbsp;·&nbsp; 6+ Months</span>
+                        <ul>
+                            <li>Delivered 6–10 client projects with custom web &amp; application solutions</li>
+                            <li>Built MERN stack applications, automation scripts, and data dashboards</li>
+                            <li>Handled end-to-end development — requirement gathering to deployment</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Software Development Intern</h3>
+                        <span class="timeline-date"><i class="fas fa-calendar-alt"></i> 2023 &nbsp;·&nbsp; Internship</span>
+                        <ul>
+                            <li>Developed and optimized applications using Python and C++</li>
+                            <li>Worked on debugging, testing, and improving program performance</li>
+                            <li>Collaborated on mini-projects applying OOP and data structures</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects reveal">
+        <div class="container">
+            <h2 class="section-title">Featured <span>Projects</span></h2>
+            <p class="section-subtitle">A showcase of my recent work and technical implementations</p>
+            <div class="projects-grid">
+
+                <div class="project-card">
+                    <div class="project-image"><i class="fas fa-building"></i></div>
+                    <div class="project-content">
+                        <span class="project-category">Full Stack Development</span>
+                        <h3>Direct Property</h3>
+                        <p class="tech-stack">MongoDB · Express · React · Node.js</p>
+                        <p>A comprehensive property management system streamlining listings, ownership tracking, and transactions with automated workflows.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/GowthamGowri-11/fsdproject" target="_blank" rel="noopener noreferrer" class="project-link"><i class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image"><i class="fas fa-chart-line"></i></div>
+                    <div class="project-content">
+                        <span class="project-category">Machine Learning</span>
+                        <h3>Student Performance Tracker</h3>
+                        <p class="tech-stack">Python · Streamlit · Scikit-learn · Pandas</p>
+                        <p>ML application that analyzes and predicts student academic performance with data preprocessing, visualizations, and model training.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/GowthamGowri-11/ml-project" target="_blank" rel="noopener noreferrer" class="project-link"><i class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image"><i class="fas fa-leaf"></i></div>
+                    <div class="project-content">
+                        <span class="project-category">Web Application</span>
+                        <h3>Data Guarding</h3>
+                        <p class="tech-stack">Next.js · React · TypeScript</p>
+                        <p>Secure agricultural data management platform that digitizes manual record-keeping, improving data integrity and workflow efficiency.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/GowthamGowri-11" target="_blank" rel="noopener noreferrer" class="project-link"><i class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image"><i class="fas fa-shield-alt"></i></div>
+                    <div class="project-content">
+                        <span class="project-category">Security &amp; Blockchain</span>
+                        <h3>Data Securer</h3>
+                        <p class="tech-stack">MERN Stack · Blockchain</p>
+                        <p>Enterprise-grade system for secure data storage using blockchain integrity verification and advanced encryption techniques.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/GowthamGowri-11/DATA-SECURER" target="_blank" rel="noopener noreferrer" class="project-link"><i class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image"><i class="fas fa-utensils"></i></div>
+                    <div class="project-content">
+                        <span class="project-category">Web Application</span>
+                        <h3>Recipe Bot</h3>
+                        <p class="tech-stack">HTML5 · CSS3 · JavaScript · API</p>
+                        <p>Ingredient-based recipe recommendation system providing personalized culinary suggestions through efficient dataset processing.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/GowthamGowri-11/recipe-bot" target="_blank" rel="noopener noreferrer" class="project-link"><i class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Accomplishments Section -->
+    <section id="accomplishments" class="accomplishments reveal">
+        <div class="container">
+            <h2 class="section-title">Accomplishments &amp; <span>Certifications</span></h2>
+            <div class="accomplishments-grid">
+                <div class="accomplishment-card"><i class="fas fa-trophy"></i><h3>Division 3</h3><p>CodeChef Ranking</p></div>
+                <div class="accomplishment-card"><i class="fas fa-star"></i><h3>1400+ Rating</h3><p>CodeChef &amp; LeetCode</p></div>
+                <div class="accomplishment-card"><i class="fas fa-medal"></i><h3>Top 15</h3><p>Among 400+ Students</p></div>
+                <div class="accomplishment-card"><i class="fas fa-code"></i><h3>1000+ Problems</h3><p>Solved Across Platforms</p></div>
+                <div class="accomplishment-card"><i class="fas fa-flag"></i><h3>80+ Contests</h3><p>Global Competitions</p></div>
+            </div>
+            <div class="certifications">
+                <h3>Certifications</h3>
+                <div class="cert-grid">
+                    <div class="cert-item"><i class="fas fa-certificate"></i> Problem Solving in C – NPTEL</div>
+                    <div class="cert-item"><i class="fas fa-certificate"></i> HTML, CSS, JavaScript – Coursera</div>
+                    <div class="cert-item"><i class="fas fa-certificate"></i> Operating System Foundations – CISCO</div>
+                    <div class="cert-item"><i class="fas fa-certificate"></i> DBMS – NPTEL (ELITE)</div>
+                    <div class="cert-item"><i class="fas fa-certificate"></i> Python Essential 1 &amp; 2 – CISCO</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact reveal">
+        <div class="container">
+            <h2 class="section-title">Get In <span>Touch</span></h2>
+            <p class="section-subtitle">I'm always open to new opportunities and collaborations</p>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-intro">
+                        <h3>Let's Connect</h3>
+                        <p>Whether it's a project idea, job opportunity, or just a chat — feel free to reach out!</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div><h4>Location</h4><p>Coimbatore, India – 641402</p></div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div><h4>Email</h4><a href="mailto:kit28.24bad049@gmail.com">kit28.24bad049@gmail.com</a></div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div><h4>Phone</h4><a href="tel:+918154505751">+91 8154505751</a></div>
+                    </div>
+                    <div class="contact-socials">
+                        <a href="https://github.com/GowthamGowri-11" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/gowtham-m-0a83353771" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <form class="contact-form" id="contact-form" novalidate>
+                    <div class="form-group">
+                        <input type="text"  name="from_name"  id="from_name"  placeholder="Your Name"    required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="from_email" id="from_email" placeholder="Your Email"   required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text"  name="subject"    id="subject"    placeholder="Subject"      required>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" id="message" placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <div class="form-status" id="form-status"></div>
+                    <button type="submit" class="btn btn-primary" id="submit-btn">
+                        <span id="btn-text"><i class="fas fa-paper-plane"></i> Send Message</span>
+                        <span id="btn-loading" style="display:none"><i class="fas fa-spinner fa-spin"></i> Sending…</span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p class="footer-logo">&lt;Gowtham/&gt;</p>
+            <p>&copy; 2026 Gowtham M. All rights reserved.</p>
+            <div class="footer-social">
+                <a href="https://github.com/GowthamGowri-11"               target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/gowtham-m-0a83353771"  target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:kit28.24bad049@gmail.com"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
