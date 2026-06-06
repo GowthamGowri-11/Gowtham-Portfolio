@@ -42,7 +42,8 @@ const Accomplishments = () => {
     { name: 'HTML, CSS, JavaScript', issuer: 'Coursera' },
     { name: 'Operating System Foundations', issuer: 'CISCO' },
     { name: 'DBMS (ELITE)', issuer: 'NPTEL' },
-    { name: 'Python Essential 1 & 2', issuer: 'CISCO' }
+    { name: 'Python Essential 1 & 2', issuer: 'CISCO' },
+    { name: 'Programming in Java (Elite + Gold)', issuer: 'NPTEL' }
   ];
 
   return (
