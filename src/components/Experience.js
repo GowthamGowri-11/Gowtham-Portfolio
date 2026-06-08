@@ -11,7 +11,7 @@ const Experience = () => {
 
   const experiences = [
     {
-      title: 'Freelance Developer',
+      title: 'Freelance Software Developer',
       duration: '6+ Months',
       type: 'Freelance',
       responsibilities: [
@@ -19,6 +19,17 @@ const Experience = () => {
         'Successfully completed 6–10 client projects with customized solutions',
         'Worked on coding, debugging, and project optimization based on client requirements',
         'Delivered high-quality solutions meeting client specifications and deadlines'
+      ]
+    },
+    {
+      title: 'Cloud Computing & DevOps Intern',
+      duration: 'Finest Coder (Coding Mart)',
+      type: 'Internship',
+      responsibilities: [
+        'Gained hands-on experience with cloud infrastructure and DevOps methodologies',
+        'Assisted in configuring and deploying applications to cloud environments',
+        'Learned to build and maintain CI/CD pipelines for automated testing and deployment',
+        'Worked with Docker and containerization to streamline application delivery'
       ]
     },
     {

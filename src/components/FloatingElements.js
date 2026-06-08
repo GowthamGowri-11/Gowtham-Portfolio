@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { memo } from 'react';
 import { motion } from 'framer-motion';
 import './FloatingElements.css';
 
@@ -70,27 +70,6 @@ const FloatingElements = () => {
         />
       ))}
       
-      {/* Floating dots */}
-      {[...Array(18)].map((_, index) => (
-        <motion.div
-          key={`dot-${index}`}
-          className="floating-dot"
-          style={{
-            left: `${Math.random() * 100}%`,
-            top: `${Math.random() * 100}%`
-          }}
-          animate={{
-            y: [0, -55, 0],
-            opacity: [0.15, 0.35, 0.15]
-          }}
-          transition={{
-            duration: 9 + Math.random() * 9,
-            repeat: Infinity,
-            ease: "easeInOut",
-            delay: Math.random() * 5
-          }}
-        />
-      ))}
       
       {/* Additional floating shapes */}
       {[...Array(5)].map((_, index) => (
@@ -118,4 +97,4 @@ const FloatingElements = () => {
   );
 };
 
-export default FloatingElements;
+export default memo(FloatingElements);

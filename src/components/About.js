@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
+import CountUpAnimation from './CountUpAnimation';
 import './About.css';
 
 const About = () => {
@@ -58,7 +59,7 @@ const About = () => {
                       animate={inView ? { opacity: 1, y: 0 } : {}}
                       transition={{ delay: index * 0.1, duration: 0.5 }}
                     >
-                      <h3>{stat.value}</h3>
+                      <h3><CountUpAnimation value={stat.value} inView={inView} /></h3>
                       <p>{stat.label}</p>
                     </motion.div>
                   ))}

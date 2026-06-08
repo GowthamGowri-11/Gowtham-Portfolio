@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
+import CountUpAnimation from './CountUpAnimation';
 import './Accomplishments.css';
 
 const Accomplishments = () => {
@@ -38,12 +39,12 @@ const Accomplishments = () => {
   ];
 
   const certifications = [
+    { name: 'Programming in Java (Elite + Gold)', issuer: 'NPTEL' },
+    { name: 'Python Essential 1 & 2', issuer: 'CISCO' },
     { name: 'Problem Solving in C', issuer: 'NPTEL' },
     { name: 'HTML, CSS, JavaScript', issuer: 'Coursera' },
-    { name: 'Operating System Foundations', issuer: 'CISCO' },
     { name: 'DBMS (ELITE)', issuer: 'NPTEL' },
-    { name: 'Python Essential 1 & 2', issuer: 'CISCO' },
-    { name: 'Programming in Java (Elite + Gold)', issuer: 'NPTEL' }
+    { name: 'Operating System Foundations', issuer: 'CISCO' }
   ];
 
   return (
@@ -67,7 +68,9 @@ const Accomplishments = () => {
                 transition={{ delay: index * 0.1, duration: 0.5 }}
                 whileHover={{ y: -10 }}
               >
-                <div className="achievement-metric">{achievement.metric}</div>
+                <div className="achievement-metric">
+                  <CountUpAnimation value={achievement.metric} inView={inView} />
+                </div>
                 <h3>{achievement.title}</h3>
                 <p>{achievement.description}</p>
               </motion.div>
