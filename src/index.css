@@ -14,6 +14,7 @@
   --bg-primary: #FFFFFF;
   --bg-secondary: #f8f9fa;
   --bg-tertiary: #e9ecef;
+  --bg-solid: #ffffff;
   --border: #dee2e6;
   --shadow: rgba(0, 0, 0, 0.08);
   --shadow-hover: rgba(0, 0, 0, 0.15);
@@ -23,7 +24,7 @@ body {
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: var(--bg-primary);
+  background: var(--bg-solid);
   color: var(--text-primary);
   line-height: 1.6;
   overflow-x: hidden;
