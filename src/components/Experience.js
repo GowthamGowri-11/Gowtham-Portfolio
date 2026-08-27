@@ -15,21 +15,21 @@ const Experience = () => {
       duration: '6+ Months',
       type: 'Freelance',
       responsibilities: [
-        '6+ months of freelance experience in software and application development',
-        'Successfully completed 6–10 client projects with customized solutions',
-        'Worked on coding, debugging, and project optimization based on client requirements',
+        '6+ months of freelance experience in full-stack and application development',
+        'Contributed to major projects including KITHackathon-Portal, Tracen (Phase 1 & 2), and AI Application Assistant',
+        'Focused on scalable development, AI-powered automation, and backend integration',
         'Delivered high-quality solutions meeting client specifications and deadlines'
       ]
     },
     {
-      title: 'Cloud Computing & DevOps Intern',
-      duration: 'Finest Coder (Coding Mart)',
+      title: 'AWS Intern',
+      duration: 'Finest Coder, Coimbatore',
       type: 'Internship',
       responsibilities: [
-        'Gained hands-on experience with cloud infrastructure and DevOps methodologies',
-        'Assisted in configuring and deploying applications to cloud environments',
-        'Learned to build and maintain CI/CD pipelines for automated testing and deployment',
-        'Worked with Docker and containerization to streamline application delivery'
+        'Assisted in deploying and managing AWS services including EC2, S3, IAM, and VPC',
+        'Gained hands-on experience in DevOps, cloud operations, and system monitoring',
+        'Supported resource optimization and day-to-day cloud infrastructure tasks',
+        'Worked offline at Finest Coder on real cloud engineering workflows (May 2026 – June 2026)'
       ]
     },
     {

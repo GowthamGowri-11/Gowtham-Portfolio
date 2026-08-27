@@ -85,8 +85,8 @@ const Contact = () => {
     {
       icon: <FaPhone />,
       title: 'Phone',
-      content: '+91 8154505751',
-      link: 'tel:+918154505751'
+      content: '+91 8015450751',
+      link: 'tel:+918015450751'
     }
   ];
 
@@ -139,7 +139,7 @@ const Contact = () => {
                   <FaGithub />
                 </a>
                 <a 
-                  href="https://www.linkedin.com/in/gowtham-m-0a8335377/" 
+                  href="https://www.linkedin.com/in/gowtham2006/" 
                   target="_blank" 
                   rel="noopener noreferrer"
                 >

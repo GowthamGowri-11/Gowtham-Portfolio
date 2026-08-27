@@ -12,39 +12,53 @@ const Accomplishments = () => {
 
   const achievements = [
     {
-      title: 'Division 3 Ranking',
-      description: 'Achieved on CodeChef',
-      metric: 'Div 3'
+      title: '5th Place in India',
+      description: 'PaperBuddy Hackathon among 240+ projects',
+      metric: '5th'
     },
     {
-      title: '1400+ Rating',
-      description: 'CodeChef & LeetCode',
+      title: 'Patent Approved',
+      description: 'Data Guardian 2.0 — Vidhya Incubation Center',
+      metric: 'Patent'
+    },
+    {
+      title: 'Top 10 Rank',
+      description: '24-Hour Coding Hackathon at college',
+      metric: 'Top 10'
+    },
+    {
+      title: 'Coding Competition Prize',
+      description: 'Ramakrishna College Coding Competition',
+      metric: 'Prize'
+    },
+    {
+      title: '1779 Max Rating',
+      description: 'LeetCode — Top 9.5% globally · 750+ solved',
+      metric: '1779'
+    },
+    {
+      title: '2 Star · 1471 Rating',
+      description: 'CodeChef — 720+ problems solved',
+      metric: '2★'
+    },
+    {
+      title: '1400+ Problems Solved',
+      description: 'Global platform performance across DSA sites',
       metric: '1400+'
     },
     {
-      title: 'Top 15 Rank',
-      description: 'Among 400+ students',
-      metric: 'Top 15'
-    },
-    {
-      title: '1000+ Problems',
-      description: 'Solved across platforms',
-      metric: '1000+'
-    },
-    {
-      title: '80+ Contests',
-      description: 'Global competitions',
-      metric: '80+'
+      title: '120+ Contests Attended',
+      description: 'Competitive programming contests in DSA',
+      metric: '120+'
     }
   ];
 
   const certifications = [
-    { name: 'Programming in Java (Elite + Gold)', issuer: 'NPTEL' },
-    { name: 'Python Essential 1 & 2', issuer: 'CISCO' },
-    { name: 'Problem Solving in C', issuer: 'NPTEL' },
-    { name: 'HTML, CSS, JavaScript', issuer: 'Coursera' },
-    { name: 'DBMS (ELITE)', issuer: 'NPTEL' },
-    { name: 'Operating System Foundations', issuer: 'CISCO' }
+    { name: 'Artificial Intelligence Essentials', issuer: 'Coursera · 2025' },
+    { name: 'Python Essential', issuer: 'Cisco · 2025' },
+    { name: 'C Programming Language', issuer: 'NPTEL · 2025' },
+    { name: 'Java Programming Language (Elite + Gold)', issuer: 'NPTEL · 2026' },
+    { name: 'DBMS', issuer: 'NPTEL · 2026' }
   ];
 
   return (
