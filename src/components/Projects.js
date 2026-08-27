@@ -12,6 +12,48 @@ const Projects = () => {
 
   const projects = [
     {
+      title: 'Paper Buddy',
+      description: 'AI-powered college fee and operations platform with a DAG-based multi-agent workflow, parallel execution, confidence gating, rollbacks, and SSE-based real-time tracking. Converts natural-language admin commands into role-scoped operations with human confirmation and RBAC.',
+      tech: ['MERN Stack', 'Llama 3.3', 'JWT', 'SSE', 'PhonePe', 'Custom Functional AI'],
+      category: 'Full Stack · AI',
+      github: 'https://github.com/GowthamGowri-11/PB-hackathon'
+    },
+    {
+      title: 'Data Guardian',
+      description: 'Secure document-sharing platform with encrypted file exchange, OTP-based time-bound access, and real-time permission control. Includes anti-data-leakage mechanisms with session controls, access revocation, audit tracking, and download restrictions.',
+      tech: ['Next.js', 'PostgreSQL', 'MongoDB', 'Redis', 'AES-256-GCM'],
+      category: 'Security · Web Application',
+      github: 'https://github.com/GowthamGowri-11/Data-Guardian-2'
+    },
+    {
+      title: 'AI-Based Intrusion Detection System',
+      description: 'Real-time threat detection system that identifies and prevents DDoS and MITM attacks using XGBoost and Scapy for automated traffic analysis. Features an explainable security framework with risk insights and automated response for effective threat mitigation.',
+      tech: ['React', 'Python', 'MongoDB', 'XGBoost', 'Scikit-learn', 'Scapy', 'Groq'],
+      category: 'AI · Cybersecurity',
+      github: 'https://github.com/GowthamGowri-11/AI-IDS'
+    },
+    {
+      title: 'Udhayam — College Fest Management Portal',
+      description: 'Scalable event management system handling 5,000+ participants with registration, team management, QR-based entry verification, and payment processing. Includes role-based portals, analytics dashboards, push notifications, and real-time attendance tracking.',
+      tech: ['Next.js', 'PostgreSQL', 'Google OAuth', 'Easebuzz', 'Cloudinary'],
+      category: 'Full Stack Development',
+      github: 'https://github.com/GowthamGowri-11/udhayam-Gowtham'
+    },
+    {
+      title: 'Atlyx',
+      description: 'SaaS-level Learning Management System (LMS) portal built as a full training platform. Supports course delivery, role-based access, and scalable operations for learners and administrators.',
+      tech: ['Next.js', 'Prisma', 'PostgreSQL', 'TypeScript'],
+      category: 'SaaS · LMS',
+      github: 'https://github.com/GowthamGowri-11/lms-portal'
+    },
+    {
+      title: 'Atlyx Compiler',
+      description: 'Custom-built compiler designed and developed from scratch for the Atlyx ecosystem, enabling code compilation and execution workflows within the training platform.',
+      tech: ['Compiler Design', 'TypeScript', 'Next.js'],
+      category: 'Systems · Compiler',
+      github: 'https://github.com/GowthamGowri-11/ATLYX-COMPILER'
+    },
+    {
       title: 'Direct Property',
       description: 'A comprehensive property management system designed to streamline listings, ownership tracking, and transaction management. Features efficient backend architecture for seamless data operations and automated workflow processes.',
       tech: ['MongoDB', 'Express', 'React', 'Node.js'],
@@ -24,13 +66,6 @@ const Projects = () => {
       tech: ['Python', 'Streamlit', 'Scikit-learn', 'Pandas'],
       category: 'Machine Learning',
       github: 'https://github.com/GowthamGowri-11/ml-project.git'
-    },
-    {
-      title: 'Data Guarding',
-      description: 'Modern agricultural data management platform that digitizes manual record-keeping processes. Enhances data integrity, automates workflows, and improves operational efficiency for agricultural stakeholders.',
-      tech: ['Next.js', 'React', 'TypeScript'],
-      category: 'Web Application',
-      github: 'https://github.com/GowthamGowri-11'
     },
     {
       title: 'Data Securer',
@@ -69,7 +104,7 @@ const Projects = () => {
                 animate={inView ? { opacity: 1, y: 0 } : {}}
                 transition={{ delay: index * 0.1, duration: 0.5 }}
               >
-                <div className="project-number">0{index + 1}</div>
+                <div className="project-number">{String(index + 1).padStart(2, '0')}</div>
                 <div className="project-content">
                   <span className="project-category">{project.category}</span>
                   <h3 className="project-title">{project.title}</h3>

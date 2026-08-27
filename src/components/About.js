@@ -11,9 +11,9 @@ const About = () => {
   });
 
   const stats = [
-    { value: '1000+', label: 'Problems Solved' },
-    { value: '80+', label: 'Contests Participated' },
-    { value: '8.92', label: 'CGPA' },
+    { value: '1400+', label: 'Problems Solved' },
+    { value: '120+', label: 'Contests Attended' },
+    { value: '8.99', label: 'Current CGPA' },
     { value: '10+', label: 'Projects Completed' }
   ];
 
@@ -33,21 +33,20 @@ const About = () => {
               <div className="about-intro">
                 <h3>AI & Data Science Engineer</h3>
                 <p className="lead">
-                  I'm an analytical B.Tech graduate in Artificial Intelligence and Data Science 
-                  from KIT - Kalaignar Karunanidhi Institute of Technology, Coimbatore.
+                  I'm a Third Year B.Tech student in Artificial Intelligence and Data Science 
+                  from KIT - Kalaignarkarunanidhi Institute of Technology, Coimbatore.
                 </p>
                 
                 <p>
                   With proficiency in data structures, C, C++, and Python, I specialize in 
-                  web development, scripting, and competitive programming. My expertise spans 
-                  across data analysis and machine learning, where I combine technical accuracy 
-                  with innovative thinking to tackle challenging problems.
+                  full-stack development, AI systems, and competitive programming. My expertise spans 
+                  across cloud engineering, machine learning, and secure application design.
                 </p>
 
                 <p>
                   I'm passionate about creating efficient solutions and continuously learning 
-                  new technologies. My experience includes freelance development, where I've 
-                  successfully delivered customized solutions for multiple clients.
+                  new technologies. My experience includes AWS internship work and freelance 
+                  full-stack development on production client projects.
                 </p>
 
                 <div className="stats-container">
@@ -73,14 +72,14 @@ const About = () => {
               </div>
               <div className="education-content">
                 <h4>B.Tech – Artificial Intelligence and Data Science</h4>
-                <p className="institution">KIT - Kalaignar Karunanidhi Institute of Technology</p>
+                <p className="institution">KIT - Kalaignarkarunanidhi Institute of Technology</p>
                 <p className="location">Coimbatore, Tamil Nadu, India</p>
                 <div className="education-details">
                   <span className="detail-item">
-                    <strong>CGPA:</strong> 8.92
+                    <strong>CGPA:</strong> 8.99/10.0
                   </span>
                   <span className="detail-item">
-                    <strong>Expected:</strong> January 2028
+                    <strong>Year:</strong> Third Year · 2024 – 2028
                   </span>
                 </div>
               </div>

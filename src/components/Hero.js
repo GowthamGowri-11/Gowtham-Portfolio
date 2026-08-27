@@ -84,8 +84,8 @@ const Hero = () => {
             </motion.div>
 
             <motion.p className="hero-description" variants={itemVariants}>
-              Analytical B.Tech graduate specializing in AI and Data Science.
-              Passionate about solving complex problems through code and innovation.
+              Third Year B.Tech student in AI & Data Science · CGPA 8.99/10.0.
+              1400+ problems solved and 120+ contests across online platforms.
             </motion.p>
 
             <motion.div className="hero-buttons" variants={itemVariants}>
@@ -104,13 +104,13 @@ const Hero = () => {
               <a href="https://github.com/GowthamGowri-11" target="_blank" rel="noopener noreferrer">
                 <FaGithub />
               </a>
-              <a href="https://www.linkedin.com/in/gowtham-m-0a8335377/" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.linkedin.com/in/gowtham2006/" target="_blank" rel="noopener noreferrer">
                 <FaLinkedin />
               </a>
               <a href="mailto:kit28.24bad049@gmail.com">
                 <FaEnvelope />
               </a>
-              <a href="tel:+918154505751">
+              <a href="tel:+918015450751">
                 <FaPhone />
               </a>
             </motion.div>

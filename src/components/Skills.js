@@ -13,22 +13,22 @@ const Skills = () => {
     {
       title: 'Programming',
       icon: '{ }',
-      skills: ['Python', 'Java', 'C++', 'C']
+      skills: ['JavaScript', 'HTML / CSS', 'Java', 'Python', 'C / C++']
     },
     {
-      title: 'Web Development',
+      title: 'Web & Design',
       icon: '< />',
-      skills: ['HTML', 'CSS', 'JavaScript', 'MERN Stack']
+      skills: ['MERN Stack', 'UI/UX Designing', 'Automation (n8n)']
     },
     {
-      title: 'Database',
+      title: 'Cloud & Database',
       icon: '⚡',
-      skills: ['DBMS', 'MySQL']
+      skills: ['EC2', 'S3', 'IAM', 'VPC', 'RDS', 'DBMS', 'Docker', 'GitHub']
     },
     {
-      title: 'Tools',
+      title: 'AI & ML',
       icon: '🛠',
-      skills: ['Git', 'GitHub', 'n8n', 'UI/UX Design']
+      skills: ['Model Training', 'Evaluating', 'Finetuning', 'RAG']
     }
   ];
 
